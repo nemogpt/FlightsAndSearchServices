@@ -1,6 +1,6 @@
 /
     -src/
-        index.js
+        index.js //server
         models/
         controllers/
         services/
@@ -10,3 +10,15 @@
     -tests/ [later]
     -static/
     -temp/
+
+//role based projects ->all models in one folder, all controllers in one.
+
+
+
+feature based
+-flights
+    /models
+    /controllers
+-Search 
+    /models
+    /controllers
