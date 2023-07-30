@@ -2,8 +2,6 @@ const {City} =require('../models/index');
 
 
 class CityRepository{
-
-
    async createCity({name}){ // destructuring the obj
     try{
         const city = await City.create({

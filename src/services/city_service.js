@@ -1,9 +1,9 @@
-const {cityRepository}= require("../repository/index");
+const {CityRepository}= require("../repository/index");
 
 
 class CityService{
     constructor(){
-        this.cityRepository =new CityRepository();
+        this.cityRepository = new CityRepository();
     }
     async createCity(data){
         try{
@@ -14,6 +14,7 @@ class CityService{
         }
         catch(error){
             console.log("Something went wrong with service layer");
+            throw {error};
         }
 
     }
@@ -25,6 +26,7 @@ class CityService{
         }
         catch(error){
             console.log("Something went wrong with service layer");
+            throw {error};
         }
 
     }
@@ -36,6 +38,7 @@ class CityService{
         }
         catch(error){
             console.log("Something went wrong with service layer");
+            throw {error};
         }
 
     }
@@ -47,7 +50,10 @@ class CityService{
         }
         catch(error){
             console.log("Something went wrong with service layer");
+            throw {error};
         }
 
     }
 }
+
+module.exports=CityService;

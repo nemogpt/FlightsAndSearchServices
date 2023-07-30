@@ -4,7 +4,7 @@ create using POST method
 data --> req.body
 
 */
-const cityService= new CityService();
+const cityService= new CityService(); 
 
 
 const create=async (req,res)=>{
