@@ -2,6 +2,8 @@ const {City} =require('../models/index');
 
 
 class CityRepository{
+
+
    async createCity({name}){ // destructuring the obj
     try{
         const city = await City.create({
@@ -15,7 +17,7 @@ class CityRepository{
     catch(error){
         console.log("Something went wrong in repository layer");
         throw {error};
-
+ 
     }
 
    }
@@ -57,7 +59,12 @@ class CityRepository{
 
    async getCity(cityId){
     try{
-        const city=await City.findByPk(cityId);
+        const city=await City.findByPk({
+            where:{
+                id:cityId
+            }
+        });
+          console.log(city)
         return city;
 
     }
