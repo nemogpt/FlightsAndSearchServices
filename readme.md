@@ -57,3 +57,5 @@ feature based
 -Search 
     /models
     /controllers
+
+    from cool_feature breanch.
